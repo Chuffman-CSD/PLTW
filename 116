@@ -1,0 +1,36 @@
+//program is made to always get 3 as the final value
+//PLTW CSA 1.1.6
+class PLTW116 {
+    public static void main( String args[] ) {
+      //selects a random number using min and max
+      int min = -20;
+      int max = 20;
+      
+      System.out.println("Weather Advice: Always Sunny!");
+      System.out.println("Random value generator "+min+" to "+max+ ":");
+      
+      int randomInt = (int)(Math.random()* max);
+      
+      //originalValue holds the value of the original random number, unchanged
+      int originalValue = randomInt;
+      
+      //multiplies the random value by two
+      System.out.println("Number: "+randomInt);
+      randomInt = randomInt * 2;
+      
+      //adds six to the new value
+      System.out.println("Number Doubled: "+randomInt);
+      randomInt = randomInt + 6;
+      
+      //divides the new value by 2
+      System.out.println("Number Added +6: "+randomInt);
+      randomInt = randomInt / 2;
+      System.out.print("Number Divided by 2: "+randomInt + "\n");
+      
+      //subtracts the original value from the new value
+      randomInt = randomInt - originalValue;
+      
+      //prints the final value which will always be 3
+      System.out.print("Number Subtracted by original value: " + randomInt);
+    }
+}
